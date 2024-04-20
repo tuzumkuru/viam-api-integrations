@@ -15,12 +15,12 @@ To use this module, follow these instructions to [add a modular service from the
 
 The Pl@ntNet API service is a [tuzumkuru:viam-api-integrations:plantnet-api](https://app.viam.com/module/tuzumkuru/api-integrations/plantnet-api) service. It uses the [rdk vision API](https://github.com/rdk/vision-api) to implement the Pl@ntNet API.
 
-### Requirements for Plantnet-API
+### Requirements
 
 You will need an [API key](https://plantnet.org/account/api/) from Pl@ntNet.
 
 
-### Configure Plantnet-API
+### Configure
 
 > [!NOTE]  
 > Before configuring your vision, you must [create a machine](https://docs.viam.com/manage/fleet/machines/#add-a-new-machine).

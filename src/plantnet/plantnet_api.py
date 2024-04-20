@@ -35,7 +35,7 @@ class plantnetApi(Vision, Reconfigurable):
     Vision represents a Vision service.
     """    
 
-    MODEL: ClassVar[Model] = Model(ModelFamily("tuzumkuru", "viam-api-integrations"), "plantnet-api")
+    MODEL: ClassVar[Model] = Model(ModelFamily("tuzumkuru", "api-integrations"), "plantnet-api")
     
     # create any class parameters here, 'some_pin' is used as an example (change/add as needed)
     # some_pin: int

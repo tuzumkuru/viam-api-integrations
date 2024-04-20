@@ -6,7 +6,7 @@
   "models": [
     {
       "api": "rdk:service:vision",
-      "model": "tuzumkuru:vision:plantnet-api"
+      "model": "tuzumkuru:api-integrations:plantnet-api"
     }
   ],
   "entrypoint": "run.sh"

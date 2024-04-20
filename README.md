@@ -13,7 +13,9 @@ To use this module, follow these instructions to [add a modular service from the
 
 ## Plantnet-API
 
-The Pl@ntNet API service is a [tuzumkuru:viam-api-integrations:plantnet-api](https://app.viam.com/module/tuzumkuru/api-integrations/plantnet-api) service. It uses the [rdk vision API](https://github.com/rdk/vision-api) to implement the Pl@ntNet API.
+The Plantnet-API service is a vision service that uses API calls to classify images. It uses the [rdk vision API](https://github.com/rdk/vision-api) to implement the Plantnet-API. 
+
+It also responds to get_detections calls to be compatible with transform camera module in which you can set the vision service and see the live results with a bounding box. For the bounding box, it returns the whole image size. 
 
 ### Requirements
 

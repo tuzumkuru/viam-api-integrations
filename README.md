@@ -1,27 +1,33 @@
-# plantnet-api modular service
+# api-integrations modular service
 
-This module implements the [rdk vision API](https://github.com/rdk/vision-api) in a tuzumkuru:viam-api-integrations:plantnet-api model.
-Using this model as a vision service, you can make API calls to [Pl@ntNet API](https://plantnet.org) to classify plant images.
+## Description
 
-## Requirements
+This module is supposed to include different API services to be used in a VIAM project.
 
-Pl@ntNet Account 
+One of the services is the Pl@ntNet API which implements the [rdk vision API](https://github.com/rdk/vision-api) in a tuzumkuru:viam-api-integrations:plantnet-api service. Using this service as a vision service, you can make API calls to [Pl@ntNet API](https://plantnet.org) to classify plant images.
 
-``` bash
-```
+## Use
 
-## Build and Run
+To use this module, follow these instructions to [add a modular service from the Viam Registry](https://docs.viam.com/registry/configure/#add-a-modular-service-from-the-viam-registry) and select the `vision / api-integrations:plantnet-api` model from the [`tuzumkuru:api-integrations` module](https://app.viam.com/module/tuzumkuru/api-integrations).
 
-To use this module, follow these instructions to [add a module from the Viam Registry](https://docs.viam.com/registry/configure/#add-a-modular-resource-from-the-viam-registry) and select the `vision / api-integrations:plantnet-api` model from the [`tuzumkuru:api-integrations` module](https://app.viam.com/module/tuzumkuru/api-integrations).
 
-## Configure your vision
+## Plantnet-API
+
+The Pl@ntNet API service is a [tuzumkuru:viam-api-integrations:plantnet-api](https://app.viam.com/module/tuzumkuru/api-integrations/plantnet-api) service. It uses the [rdk vision API](https://github.com/rdk/vision-api) to implement the Pl@ntNet API.
+
+### Requirements for Plantnet-API
+
+You will need an [API key](https://plantnet.org/account/api/) from Pl@ntNet.
+
+
+### Configure Plantnet-API
 
 > [!NOTE]  
 > Before configuring your vision, you must [create a machine](https://docs.viam.com/manage/fleet/machines/#add-a-new-machine).
 
 Navigate to the **Config** tab of your robot’s page in [the Viam app](https://app.viam.com/).
-Click on the **Components** subtab and click **Create component**.
-Select the `vision` type, then select the `tuzumkuru:viam-api-integrations:plantnet-api` model. 
+Click on the **Services** subtab and click **Create service**.
+Select the `vision` type, then select the `tuzumkuru:api-integrations:plantnet-api` model. 
 Enter a name for your vision and click **Create**.
 
 On the new component panel, copy and paste the following attribute template into your vision’s **Attributes** box:
@@ -29,7 +35,6 @@ On the new component panel, copy and paste the following attribute template into
 ```json
 {
   "api_key": "<<your-api-key-here>>",
-  "project": "all" 
 }
 ```
 
@@ -72,7 +77,7 @@ You can find more with an API call, details are [here](https://my-api.plantnet.o
 }
 ```
 
-### Next Steps
+## Next Steps
 
 - Add more configuration parameters to be used with the API
 

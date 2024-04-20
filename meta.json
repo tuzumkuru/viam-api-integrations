@@ -1,0 +1,13 @@
+{
+  "module_id": "tuzumkuru:api-integrations",
+  "visibility": "public",
+  "url": "https://github.com/tuzumkuru/viam-api-integrations",
+  "description": "This module contains API integrations to use with Viam",
+  "models": [
+    {
+      "api": "rdk:service:vision",
+      "model": "tuzumkuru:vision:plantnet-api"
+    }
+  ],
+  "entrypoint": "run.sh"
+}

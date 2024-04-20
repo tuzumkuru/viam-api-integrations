@@ -19,7 +19,7 @@ It also responds to get_detections calls to be compatible with transform camera 
 
 ### Requirements
 
-You will need an [API key](https://plantnet.org/account/api/) from Pl@ntNet.
+You will need an [API key](https://my.plantnet.org/) from Pl@ntNet.
 
 
 ### Configure

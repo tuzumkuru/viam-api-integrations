@@ -4,7 +4,7 @@
 
 This module is supposed to include different API services to be used in a VIAM project.
 
-One of the services is the Pl@ntNet API which implements the [rdk vision API](https://github.com/rdk/vision-api) in a tuzumkuru:viam-api-integrations:plantnet-api service. Using this service as a vision service, you can make API calls to [Pl@ntNet API](https://plantnet.org) to classify plant images.
+One of the services is the Plantnet-API which implements the [rdk vision API](https://github.com/rdk/vision-api) in a tuzumkuru:viam-api-integrations:plantnet-api service. Using this service as a vision service, you can make API calls to [Pl@ntNet API](https://plantnet.org) to classify plant images.
 
 ## Use
 
